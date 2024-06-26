@@ -69,14 +69,6 @@ To verify a file's signature, go to the "Verify Signature" section, select the f
 - `templates/`: Directory containing HTML templates.
 - `static/`: Directory for storing generated files (keys, signatures, random data).
 
-## License
-
-This project is licensed under the MIT License. Details can be found in the `LICENSE` file.
-
-## Authors
-
-This project was created by [Your Name]. If you have any questions or comments, please contact me at [Your Email].
-
 ---
 
 # Podpis Cyfrowy
@@ -147,11 +139,3 @@ Aby zweryfikować podpis pliku, przejdź do sekcji "Verify Signature", wybierz p
 - `generate_random_data.py`: Skrypt do generowania danych losowych.
 - `templates/`: Katalog z szablonami HTML.
 - `static/`: Katalog do przechowywania wygenerowanych plików (klucze, podpisy, dane losowe).
-
-## Licencja
-
-Projekt jest dostępny na licencji MIT. Szczegóły znajdują się w pliku `LICENSE`.
-
-## Autorzy
-
-Projekt został stworzony przez [Twoje Imię]. Jeśli masz pytania lub uwagi, skontaktuj się ze mną poprzez [Twój e-mail].

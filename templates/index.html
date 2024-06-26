@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Signature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #005f6b;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #007f80;
+        }
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="file"], input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007f80;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            border-radius: 4px;
+            cursor: pointer.
+        }
+        button:hover {
+            background-color: #005f6b.
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Signature</h1>
+
+        <h2>Generate Random Data</h2>
+        <form action="/generate_random_data" method="post">
+            <button type="submit">Generate Random Data</button>
+        </form>
+
+        <h2>Generate Key</h2>
+        <form action="/generate_key" method="post">
+            <button type="submit">Generate Key</button>
+        </form>
+
+        <h2>Sign File</h2>
+        <form action="/sign" method="post" enctype="multipart/form-data">
+            <label for="file">File:</label>
+            <input type="file" name="file" id="file" required><br>
+            <label for="private_key">Private Key:</label>
+            <input type="file" name="private_key" id="private_key" required><br>
+            <button type="submit">Sign</button>
+        </form>
+
+        <h2>Verify Signature</h2>
+        <form action="/verify" method="post" enctype="multipart/form-data">
+            <label for="file">File:</label>
+            <input type="file" name="file" id="file" required><br>
+            <label for="signature">Signature:</label>
+            <input type="file" name="signature" id="signature" required><br>
+            <label for="public_key">Public Key:</label>
+            <input type="file" name="public_key" id="public_key" required><br>
+            <label for="hash">Hash:</label>
+            <input type="file" name="hash" id="hash" required><br>
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+</body>
+</html>

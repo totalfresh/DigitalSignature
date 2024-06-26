@@ -15,7 +15,7 @@ The "Digital Signature" project is a web application that allows generating RSA 
 
 1. Clone the repository:
     ```bash
-    git clone [<REPOSITORY_URL>](https://github.com/totalfresh/DigitalSignature)
+    git clone https://github.com/totalfresh/DigitalSignature
     cd Digital-Signature
     ```
 
@@ -94,7 +94,7 @@ Projekt "Podpis Cyfrowy" to aplikacja internetowa umożliwiająca generowanie kl
 
 1. Sklonuj repozytorium:
     ```bash
-    git clone [<URL_REPOZYTORIUM>](https://github.com/totalfresh/DigitalSignature)
+    git clone https://github.com/totalfresh/DigitalSignature
     cd Digital-Signature
     ```
 
